@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Web App</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 30px;
+    }
+
+    input[type="text"], textarea {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+
+    button {
+      padding: 5px 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      position: relative;
+    }
+
+    .deleteBtn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      padding: 2px 8px;
+      background-color: #f44336;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>Blog Web App</h1>
+
+  <h2>Add New Blog</h2>
+  <input type="text" id="title" placeholder="Enter title">
+  <textarea id="body" placeholder="Enter blog content"></textarea>
+  <button id="addBtn">Add Blog</button>
+
+  <h2>Existing Blogs</h2>
+  <ul id="blogList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
